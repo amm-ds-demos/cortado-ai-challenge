@@ -1,0 +1,307 @@
+{
+    "agent_responses": [
+        {
+            "response": "The address of the rental property is 402 4th St NE, Washington, DC 20002, USA.",
+            "sources": [
+                {
+                    "content": "The address of the listing is 402 4th St NE, Washington, DC 20002, USA.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'address'}}"
+                    },
+                    "raw_output": "The address of the listing is 402 4th St NE, Washington, DC 20002, USA.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Yes, the property does accept pets. However, please note that there is a pet fee of $50.",
+            "sources": [
+                {
+                    "content": "The listing \"Cortado Stanton Park\" has a pet fee of $50.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'pet policy'}}"
+                    },
+                    "raw_output": "The listing \"Cortado Stanton Park\" has a pet fee of $50.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "The cancellation policy for the property is as follows: You will receive a full refund if you cancel your booking at least 15 days ahead of your scheduled arrival. However, if you cancel less than 15 days before your arrival, no refund will be provided.",
+            "sources": [
+                {
+                    "content": "The cancellation policy is: Full refund if cancelled at least 15 days ahead of time. Otherwise no refund.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'cancellation policy'}}"
+                    },
+                    "raw_output": "The cancellation policy is: Full refund if cancelled at least 15 days ahead of time. Otherwise no refund.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Smoking of any kind, including vaping and e-cigarettes, is not allowed in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property. Please note that breaking this rule will incur a $500 cleaning fee.",
+            "sources": [
+                {
+                    "content": "Encountered error: Invalid query",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "action": "listing_object_tool",
+                        "action_input": {
+                            "input": "smoking policy"
+                        }
+                    },
+                    "raw_output": "Invalid query",
+                    "is_error": true,
+                    "source_nodes": []
+                },
+                {
+                    "content": "The house rules for the listing are as follows:\n\n1. Maintain a good level of cleanliness throughout your stay. Notify the staff immediately in case of any accidental damage.\n2. Never use liquid dish soap in the dishwasher. Only use dishwasher detergent or dishwasher pods and rinse all dishes prior to cleaning.\n3. Avoid damaging nonstick cookware and stovetops, do not use any sharp, metal, or hard utensils on the cookware and stove top.\n4. Smoking of any kind (including vaping & e-cigarettes) is not allowed in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property. Breaking this rule will incur a $500 cleaning fee.\n5. Pets are allowed with prior notification and an additional $50 cleaning fee.\n6. Parties, events, and excessive noise are prohibited.\n7. Respect all members of our staff and the home's neighbors. Racism, sexism, discrimination, intimidation, or violence of any kind is not tolerated.\n8. Illegal substances (including illegal drugs) or activity and dangerous or hazardous items (e.g., those that may increase the risk of fire or explosion such as candles or lighters) are prohibited.\n9. Firearms and other weapons are prohibited.\n10. The accommodations should only be used for personal accommodation.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'house rules'}}"
+                    },
+                    "raw_output": "The house rules for the listing are as follows:\n\n1. Maintain a good level of cleanliness throughout your stay. Notify the staff immediately in case of any accidental damage.\n2. Never use liquid dish soap in the dishwasher. Only use dishwasher detergent or dishwasher pods and rinse all dishes prior to cleaning.\n3. Avoid damaging nonstick cookware and stovetops, do not use any sharp, metal, or hard utensils on the cookware and stove top.\n4. Smoking of any kind (including vaping & e-cigarettes) is not allowed in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property. Breaking this rule will incur a $500 cleaning fee.\n5. Pets are allowed with prior notification and an additional $50 cleaning fee.\n6. Parties, events, and excessive noise are prohibited.\n7. Respect all members of our staff and the home's neighbors. Racism, sexism, discrimination, intimidation, or violence of any kind is not tolerated.\n8. Illegal substances (including illegal drugs) or activity and dangerous or hazardous items (e.g., those that may increase the risk of fire or explosion such as candles or lighters) are prohibited.\n9. Firearms and other weapons are prohibited.\n10. The accommodations should only be used for personal accommodation.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "No, you do not need a key to access the property. The property is equipped with a smart lock and the access code is 2048.",
+            "sources": [
+                {
+                    "content": "The smart-lock code for the listing object is 2048.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'smart-lock code'}}"
+                    },
+                    "raw_output": "The smart-lock code for the listing object is 2048.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "The total price for a guest staying two nights with a small pet at the property would be calculated as follows:\n\n- The nightly price is $300, so for two nights, it would be $300 x 2 = $600.\n- The pet fee is $50.\n\nSo, the total price would be $600 (for two nights) + $50 (pet fee) = $650. Please note that this does not include any potential taxes or other fees that may apply.",
+            "sources": [
+                {
+                    "content": "The pricing details for the listing named 'Cortado Stanton Park' with ID 243759 are as follows: The nightly price is 300 USD, the weekly discount is 10% and the monthly discount is 20%. The cleaning fee is 150 USD. The price for an extra person is 60 USD and the pet fee is 50 USD.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'pricing details'}}"
+                    },
+                    "raw_output": "The pricing details for the listing named 'Cortado Stanton Park' with ID 243759 are as follows: The nightly price is 300 USD, the weekly discount is 10% and the monthly discount is 20%. The cleaning fee is 150 USD. The price for an extra person is 60 USD and the pet fee is 50 USD.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "The check-out time for the property is 11 AM.",
+            "sources": [
+                {
+                    "content": "The check-out time for the listing is 11.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'check-out time'}}"
+                    },
+                    "raw_output": "The check-out time for the listing is 11.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "I'm sorry, but I couldn't find any information about a guest arriving on July 17.",
+            "sources": [
+                {
+                    "content": "There were no prior conversations on July 17.",
+                    "tool_name": "prior_conversations_tool",
+                    "raw_input": {
+                        "input": "{'action': 'prior_conversations_tool', 'action_input': {'input': 'July 17'}}"
+                    },
+                    "raw_output": "There were no prior conversations on July 17.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "In Washington DC, where the property is located, there are several areas designated for overnight parking and two-hour parking during the day. However, if you choose to park on the street, it's recommended to bring all valuables inside with you and not to leave anything valuable visible within your car. Please note that this is a general recommendation for the area and may not specifically apply to the immediate vicinity of the property.",
+            "sources": [
+                {
+                    "content": "In DC, there are several areas designated for overnight parking and two-hour parking during the day. However, if you choose to park on the street, it's recommended to bring all valuables inside with you and not to leave anything valuable visible within your car.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "{'action': 'vector_tool', 'action_input': {'input': 'parking'}}"
+                    },
+                    "raw_output": "In DC, there are several areas designated for overnight parking and two-hour parking during the day. However, if you choose to park on the street, it's recommended to bring all valuables inside with you and not to leave anything valuable visible within your car.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "f7e66445-25df-450a-b331-7e188db3bc04",
+                            "text": "\ud83d\ude87 \u00a0 P u b l i c  T r a n s p o r t a t i o n\nIf you don\u02bct have a car (or would like to keep it parked during your stay), DC of fers \na wonderful public transpor tation net work that will help y ou reach nearly any part \nof the cit y or surrounding ar ea."
+                        },
+                        {
+                            "id": "f7e47a11-dbc5-432c-ab30-0ffe0a8f0b30",
+                            "text": "That said,  \nthere are several areas signed in gr een for overnight parking and t wo-hour \nparking dur ing the da y. If you park on the str eet, be sur e to bring all valuables  \ninside the home with y ou and don \u02bct leave anything valuable visible within y our car."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "The WiFi username for the property is 'Cortado_Stanton_Park' and the password is 'Cortad0!'. However, the location of the router is not specified.",
+            "sources": [
+                {
+                    "content": "The WiFi username is 'Cortado_Stanton_Park' and the password is 'Cortad0!'.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'wifi details'}}"
+                    },
+                    "raw_output": "The WiFi username is 'Cortado_Stanton_Park' and the password is 'Cortad0!'.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Yes, the property provides a Mr. Coffee coffeemaker for drip coffee. If you need further assistance, you can reach out to the contact person, Spongebob Squarepants, via email at bob@yahoo.mail.",
+            "sources": [
+                {
+                    "content": "The home mentioned in the context has a Mr. Coffee coffeemaker for drip coffee.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "{'action': 'vector_tool', 'action_input': {'input': 'coffee'}}"
+                    },
+                    "raw_output": "The home mentioned in the context has a Mr. Coffee coffeemaker for drip coffee.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "f9ead92b-6f9b-4f0d-96ba-9c3909e9b50e",
+                            "text": "Ben\u02bcs Chili Bo wl \ue088 A DC st aple; steaming bo wls of chili ser ved in a do wn-to-\nearth H Street establishment.\nCane \ue088 Caribbean street food in a co zy setting \u2014 once fr equented by \nPresident Ob ama!"
+                        },
+                        {
+                            "id": "c492ae71-3574-4859-9813-d0d691e672fd",
+                            "text": "\ud83d\udd0cAppliances  \ue088 If any of the plug-in appliances ar en\u02bct working dur ing your \nstay, please try resetting the outlet the y are plugged int o before \ncontacting your host \ud83d\ude42\nCof f ee \u2615\nThis home has a Mr . Coffee coffeemaker for drip coffee."
+                        }
+                    ]
+                },
+                {
+                    "content": "The contact details for the listing are as follows: The contact's name is Spongebob Squarepants. They can be reached at the phone number +1 (202) 470-3780, and their email address is bob@yahoo.mail. No address was provided.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'contact details'}}"
+                    },
+                    "raw_output": "The contact details for the listing are as follows: The contact's name is Spongebob Squarepants. They can be reached at the phone number +1 (202) 470-3780, and their email address is bob@yahoo.mail. No address was provided.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Yes, there is a pet fee of $50 at the property. As for the guest's snail, its name is Gary, as mentioned by a guest named Patrick Star in a previous conversation.",
+            "sources": [
+                {
+                    "content": "The pet fee for the listing \"Cortado Stanton Park\" with the id 243759 is $50.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "{'action': 'listing_object_tool', 'action_input': {'input': 'pet fee'}}"
+                    },
+                    "raw_output": "The pet fee for the listing \"Cortado Stanton Park\" with the id 243759 is $50.",
+                    "is_error": false,
+                    "source_nodes": []
+                },
+                {
+                    "content": "Based on the query, there is a prior conversation where the term 'snail' was mentioned. The conversation was from a user named Patrick Star who asked if he could bring his pet snail, Gary, to his reservation. The conversation was sent via email on '2024-07-16 21:19:02' and the status of the conversation is 'sent'.",
+                    "tool_name": "prior_conversations_tool",
+                    "raw_input": {
+                        "input": "{'action': 'prior_conversations_tool', 'action_input': {'input': 'snail'}}"
+                    },
+                    "raw_output": "Based on the query, there is a prior conversation where the term 'snail' was mentioned. The conversation was from a user named Patrick Star who asked if he could bring his pet snail, Gary, to his reservation. The conversation was sent via email on '2024-07-16 21:19:02' and the status of the conversation is 'sent'.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "For a great bowl of chili, you might want to try Ben's Chili Bowl. It's a staple in Washington DC and is known for its steaming bowls of chili. It's located on H Street, which is not too far from the rental property. Another option is Cane, which serves Caribbean street food in a cozy setting and was once frequented by President Obama.",
+            "sources": [
+                {
+                    "content": "The context mentions two restaurants. One is Ben's Chili Bowl, a staple in DC, known for its steaming bowls of chili served in a down-to-earth H Street establishment. The other is Cane, a place that serves Caribbean street food in a cozy setting and was once frequented by President Obama.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "{'action': 'vector_tool', 'action_input': {'input': 'restaurants'}}"
+                    },
+                    "raw_output": "The context mentions two restaurants. One is Ben's Chili Bowl, a staple in DC, known for its steaming bowls of chili served in a down-to-earth H Street establishment. The other is Cane, a place that serves Caribbean street food in a cozy setting and was once frequented by President Obama.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "f9ead92b-6f9b-4f0d-96ba-9c3909e9b50e",
+                            "text": "Ben\u02bcs Chili Bo wl \ue088 A DC st aple; steaming bo wls of chili ser ved in a do wn-to-\nearth H Street establishment.\nCane \ue088 Caribbean street food in a co zy setting \u2014 once fr equented by \nPresident Ob ama!"
+                        },
+                        {
+                            "id": "8676f9ae-0347-4cfc-a41f-44605b9cc70d",
+                            "text": "Best for pre-prepared frozen meals and snacks.\n\ud83c\udf06 \u00a0 O t h e r  A t t r a c t i o n s\nUS Capit ol \ue088 One of DC\u02bc s most popular t ourist attractions, the US Capit ol hosts \ndaily tours of it s hallowed corridors from professional t our guides. Ent er \nthrough the b asement le vel for a guided t our."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "Before checking out, guests are requested to adhere to the following procedures:\n\n1. Check-out time is no later than 11:00 AM on the day of departure.\n2. Please place all used sheets and towels in the washing machine and start a wash cycle.\n3. Similarly, all used dishes should be placed in the dishwasher and a wash cycle should be started.\n\nThese procedures help ensure a smooth transition for the next guest and are greatly appreciated.",
+            "sources": [
+                {
+                    "content": "The check-out procedures include leaving no later than 11:00 AM on the day of your departure. Before leaving, you are requested to place all used sheets and towels in the washing machine and run it. You are also asked to do the same for all dishes, by placing them in the dishwasher and running it before leaving.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "{'action': 'vector_tool', 'action_input': {'input': 'check-out procedures'}}"
+                    },
+                    "raw_output": "The check-out procedures include leaving no later than 11:00 AM on the day of your departure. Before leaving, you are requested to place all used sheets and towels in the washing machine and run it. You are also asked to do the same for all dishes, by placing them in the dishwasher and running it before leaving.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "36b2f8a6-3a81-4123-86ea-5ba7d1c329cd",
+                            "text": "Check -out time \ue092 No later than 11\ue09200AM on the da y of your departure"
+                        },
+                        {
+                            "id": "c8b30388-663d-4824-92c1-f6a918d475cd",
+                            "text": "C h e c k i n g  O u t\n\ud83d\udc4b \u00a0 C h e c k - o u t  P r o c e d u r e\nPlease place all used sheet s and towels in the washing machine and run it pr ior to \nyour departure. We ask that y ou do the same f or all of the dishes, placing them in  \nthe dishwasher and running it bef ore leaving."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "The washing machine in the home is located in the basement bathroom, along with the dryer. These appliances are free for guests to use. The area is stocked with limited dryer sheets and laundry detergent pods. Remember to place all used sheets and towels in the washing machine and run it prior to your departure as part of the check-out procedures.",
+            "sources": [
+                {
+                    "content": "The home is equipped with a separate washer and dryer, which are located in the basement bathroom. These appliances are free for guests to use. The area is stocked with limited dryer sheets and laundry detergent pods. When checking out, guests are asked to place all used sheets and towels in the washing machine and run it prior to their departure.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "{'action': 'vector_tool', 'action_input': {'input': 'laundry'}}"
+                    },
+                    "raw_output": "The home is equipped with a separate washer and dryer, which are located in the basement bathroom. These appliances are free for guests to use. The area is stocked with limited dryer sheets and laundry detergent pods. When checking out, guests are asked to place all used sheets and towels in the washing machine and run it prior to their departure.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "c8b30388-663d-4824-92c1-f6a918d475cd",
+                            "text": "C h e c k i n g  O u t\n\ud83d\udc4b \u00a0 C h e c k - o u t  P r o c e d u r e\nPlease place all used sheet s and towels in the washing machine and run it pr ior to \nyour departure. We ask that y ou do the same f or all of the dishes, placing them in  \nthe dishwasher and running it bef ore leaving."
+                        },
+                        {
+                            "id": "f8dcdfb7-8eff-4c78-8c18-b9adb9a3e24d",
+                            "text": "\ud83e\uddfa \u00a0 L a u n d r y\nThe home comes equipped with a sep arate washer & dr yer located in the  \nbasement b athroom. Both ar e free for guest s to use, and w e have stocked the \narea with limit ed dryer sheet s and laundr y detergent pods!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
