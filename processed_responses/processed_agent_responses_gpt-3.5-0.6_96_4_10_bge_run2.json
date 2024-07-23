@@ -1,0 +1,303 @@
+{
+    "agent_responses": [
+        {
+            "response": "The property's address is 402 4th St NE, Washington, DC 20002, USA.",
+            "sources": [
+                {
+                    "content": "The property address is 402 4th St NE, Washington, DC 20002, USA.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "property address"
+                    },
+                    "raw_output": "The property address is 402 4th St NE, Washington, DC 20002, USA.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Yes, the property \"Cortado Stanton Park\" does accept pets, and there is a pet fee of $50.",
+            "sources": [
+                {
+                    "content": "For the listing \"Cortado Stanton Park,\" there is a pet fee of $50.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "pet policies"
+                    },
+                    "raw_output": "For the listing \"Cortado Stanton Park,\" there is a pet fee of $50.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "The cancellation policy for the property \"Cortado Stanton Park\" is a full refund if cancelled at least 15 days ahead of time. Otherwise, no refund will be provided.",
+            "sources": [
+                {
+                    "content": "The cancellation policy for the listing with ID 243759, named Cortado Stanton Park, is as follows: Full refund if cancelled at least 15 days ahead of time. Otherwise no refund.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "cancellation policies"
+                    },
+                    "raw_output": "The cancellation policy for the listing with ID 243759, named Cortado Stanton Park, is as follows: Full refund if cancelled at least 15 days ahead of time. Otherwise no refund.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Vaping is not allowed at the property \"Cortado Stanton Park.\" The smoking policy strictly prohibits smoking of any kind, including vaping and e-cigarettes, both inside the home and within 50 feet of the property. Violating this rule may result in termination of your stay and a $500 cleaning fee.",
+            "sources": [
+                {
+                    "content": "The smoking policy for the Cortado Stanton Park property is strictly enforced. Smoking of any kind, including vaping and e-cigarettes, is not allowed in the home, on the property (including balconies), or within 50 feet of the property. Violating this rule could result in termination of your stay and incur a $500 cleaning fee.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "smoking policies"
+                    },
+                    "raw_output": "The smoking policy for the Cortado Stanton Park property is strictly enforced. Smoking of any kind, including vaping and e-cigarettes, is not allowed in the home, on the property (including balconies), or within 50 feet of the property. Violating this rule could result in termination of your stay and incur a $500 cleaning fee.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "You do not need a physical key to access the property. The smart lock code for the listing is 2048.",
+            "sources": [
+                {
+                    "content": "The smart lock code for the listing is 2048.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "smart-lock code"
+                    },
+                    "raw_output": "The smart lock code for the listing is 2048.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "For 1 guest staying two nights with a small pet at the property \"Cortado Stanton Park,\" the total price would be as follows:\n- Nightly Price: $300\n- Cleaning Fee: $150\n- Extra Person Fee: $60\n- Pet Fee: $50\n\nTotal Price for 2 nights with 1 guest and a small pet: $860.",
+            "sources": [
+                {
+                    "content": "The nightly price for the listing \"Cortado Stanton Park\" is $300. Additionally, there is a cleaning fee of $150, an extra person fee of $60, and a pet fee of $50.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "nightly rates and applicable fees"
+                    },
+                    "raw_output": "The nightly price for the listing \"Cortado Stanton Park\" is $300. Additionally, there is a cleaning fee of $150, an extra person fee of $60, and a pet fee of $50.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "The check-out time for the property \"Cortado Stanton Park\" is at 11:00 AM.",
+            "sources": [
+                {
+                    "content": "The check-out time for listing with ID 243759 is 11.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "check-out times"
+                    },
+                    "raw_output": "The check-out time for listing with ID 243759 is 11.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "There are no records of a guest arriving on July 17 in the prior conversations database. If you have a specific guest in mind, please provide their name for further assistance.",
+            "sources": [
+                {
+                    "content": "There are no prior conversations in the database that match the query \"guest arriving on July 17\".",
+                    "tool_name": "prior_conversations_tool",
+                    "raw_input": {
+                        "input": "guest arriving on July 17"
+                    },
+                    "raw_output": "There are no prior conversations in the database that match the query \"guest arriving on July 17\".",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "There are designated overnight parking areas in green near the property. It is advised to bring all valuables inside and not leave any visible items in the car. Additionally, there are two-hour parking spots available during the day. If you prefer not to park on the street, the city has a comprehensive public transportation network for easy access to different areas.",
+            "sources": [
+                {
+                    "content": "Overnight parking areas are designated in green, along with two-hour parking spots during the day. It is recommended to bring all valuables inside the home if parking on the street and to ensure that no valuable items are visible inside the car. Additionally, for those without a car or who prefer to keep it parked, the city provides an extensive public transportation network allowing easy access to various parts of the city and surrounding areas.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "parking"
+                    },
+                    "raw_output": "Overnight parking areas are designated in green, along with two-hour parking spots during the day. It is recommended to bring all valuables inside the home if parking on the street and to ensure that no valuable items are visible inside the car. Additionally, for those without a car or who prefer to keep it parked, the city provides an extensive public transportation network allowing easy access to various parts of the city and surrounding areas.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "2d97abea-6b06-4245-83e3-8f2f894b23a8",
+                            "text": "That said,  \nthere are several areas signed in gr een for overnight parking and t wo-hour \nparking dur ing the da y. If you park on the str eet, be sur e to bring all valuables  \ninside the home with y ou and don \u02bct leave anything valuable visible within y our car."
+                        },
+                        {
+                            "id": "271844b1-1985-4b69-be62-cc9e377d6609",
+                            "text": "\ud83d\ude87 \u00a0 P u b l i c  T r a n s p o r t a t i o n\nIf you don\u02bct have a car (or would like to keep it parked during your stay), DC of fers \na wonderful public transpor tation net work that will help y ou reach nearly any part \nof the cit y or surrounding ar ea."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "The Wi-Fi network at the property is named Cortado_Stanton_Park. For the fastest speeds, it is recommended to connect to the 5G version of the network. Unfortunately, the specific WiFi password and router location details were not provided in the retrieved information.",
+            "sources": [
+                {
+                    "content": "The Wi-Fi network mentioned is named Cortado_Stanton_Park, and it is recommended to connect to the 5G version for the fastest speeds.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "WiFi and router information"
+                    },
+                    "raw_output": "The Wi-Fi network mentioned is named Cortado_Stanton_Park, and it is recommended to connect to the 5G version for the fastest speeds.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "9f187a19-0b8a-401d-9ad6-77948f1b475c",
+                            "text": "inside\n\ud83d\udd10\u00a0Smart lock\nThe Home\n\ud83d\udcbb\u00a0Internet\n\ud83d\uddd1\u00a0Trash\n\ud83e\udd58\u00a0Kitchen\n\ud83e\uddfa\u00a0Laundry\n\u2744\u00a0Thermostat\nThings t o Do\n\u2615\u00a0Coffee\n\ud83c\udf5d\u00a0Restaurants & Bars\n\ud83e\udd56\u00a0Groceries\n\ud83c\udf06\u00a0Other A ttractions\nChecking Out\n\ud83d\udc4b \u00a0Check -out Pr ocedur e"
+                        },
+                        {
+                            "id": "f6f9ec2b-d65d-462b-a494-5b5450caf7fc",
+                            "text": "T h e  H o m e\n\ud83d\udcbb \u00a0 I n t e r n e t\nWi-Fi net work: Cortado_Stanton_Park\nBe sure to connect t o the 5G v ersion for the fastest speeds!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "The property's kitchen is fully equipped with stainless steel appliances, cookware, and dinnerware. As for the contact's email, it is bob@yahoo.mail.",
+            "sources": [
+                {
+                    "content": "The kitchen is fully equipped with stainless steel appliances, cookware, and dinnerware available for use during the stay.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "kitchen equipment"
+                    },
+                    "raw_output": "The kitchen is fully equipped with stainless steel appliances, cookware, and dinnerware available for use during the stay.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "ca8b3039-4a54-43a2-b3f5-91b86f0706ae",
+                            "text": "\ud83e\udd58 \u00a0 K i t c h e n\nThe kitchen comes full y equipped with st ainless st eel appliances and all of the  \ncookwar e and dinner ware you will need f or your stay. If there is any food left in \nthe cupbo ards, please feel free to help yourself!"
+                        },
+                        {
+                            "id": "ee05ca57-d4b8-4aa2-a680-4f0ff9f56c57",
+                            "text": "C h e c k i n g  O u t\n\ud83d\udc4b \u00a0 C h e c k - o u t  P r o c e d u r e\nPlease place all used sheet s and towels in the washing machine and run it pr ior to \nyour departure. We ask that y ou do the same f or all of the dishes, placing them in  \nthe dishwasher and running it bef ore leaving."
+                        }
+                    ]
+                },
+                {
+                    "content": "The contact details for the listing object are as follows:\n- Name: Spongebob Squarepants\n- Phone Number: +1 (202) 470-3780\n- Language: English\n- Email: bob@yahoo.mail",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "contact details"
+                    },
+                    "raw_output": "The contact details for the listing object are as follows:\n- Name: Spongebob Squarepants\n- Phone Number: +1 (202) 470-3780\n- Language: English\n- Email: bob@yahoo.mail",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Yes, there is a pet fee of $50 for the property \"Cortado Stanton Park.\" Additionally, the guest's snail's name is Gary.",
+            "sources": [
+                {
+                    "content": "For the listing named \"Cortado Stanton Park,\" there is a pet fee of $50.",
+                    "tool_name": "listing_object_tool",
+                    "raw_input": {
+                        "input": "pet policies"
+                    },
+                    "raw_output": "For the listing named \"Cortado Stanton Park,\" there is a pet fee of $50.",
+                    "is_error": false,
+                    "source_nodes": []
+                },
+                {
+                    "content": "The guest's snail's name is Gary.",
+                    "tool_name": "prior_conversations_tool",
+                    "raw_input": {
+                        "input": "guest's snail name"
+                    },
+                    "raw_output": "The guest's snail's name is Gary.",
+                    "is_error": false,
+                    "source_nodes": []
+                }
+            ]
+        },
+        {
+            "response": "Two recommended restaurants near the rental property are Ben's Chili Bowl and Cane. Ben's Chili Bowl is known for its delicious bowls of chili, making it a great place to satisfy your chili cravings.",
+            "sources": [
+                {
+                    "content": "Ben's Chili Bowl and Cane are two recommended restaurants in the area.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "restaurants and bars"
+                    },
+                    "raw_output": "Ben's Chili Bowl and Cane are two recommended restaurants in the area.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "fad11a53-db17-4759-a3e4-2c9dbc2e67b6",
+                            "text": "\ud83e\udd56 \u00a0 G r o c e r i e s\nWhole F oods \ue088 Large, organic gr ocery store located on H Str eet. Rotating hot -\nbar selection mak es for a quick grab-and-go me al.\nT r ader Joe \u02bc s \ue088 Also loc ated on H Str eet, within walking dist ance of the home."
+                        },
+                        {
+                            "id": "7ca1d1a7-0a3e-4096-9838-9635693d1db5",
+                            "text": "Ben\u02bcs Chili Bo wl \ue088 A DC st aple; steaming bo wls of chili ser ved in a do wn-to-\nearth H Street establishment.\nCane \ue088 Caribbean street food in a co zy setting \u2014 once fr equented by \nPresident Ob ama!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "Before checking out, guests should follow these procedures:\n1. Place all used sheets and towels in the washing machine and run it before departure.\n2. Do the same for all dishes by placing them in the dishwasher and running it before leaving.",
+            "sources": [
+                {
+                    "content": "The check-out procedures include placing all used sheets and towels in the washing machine and running it before departure. Additionally, guests are asked to do the same for all dishes by placing them in the dishwasher and running it before leaving.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "check-out procedures"
+                    },
+                    "raw_output": "The check-out procedures include placing all used sheets and towels in the washing machine and running it before departure. Additionally, guests are asked to do the same for all dishes by placing them in the dishwasher and running it before leaving.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "515aa9e9-1720-4c24-9558-7440c88588b2",
+                            "text": "Check -out time \ue092 No later than 11\ue09200AM on the da y of your departure"
+                        },
+                        {
+                            "id": "ee05ca57-d4b8-4aa2-a680-4f0ff9f56c57",
+                            "text": "C h e c k i n g  O u t\n\ud83d\udc4b \u00a0 C h e c k - o u t  P r o c e d u r e\nPlease place all used sheet s and towels in the washing machine and run it pr ior to \nyour departure. We ask that y ou do the same f or all of the dishes, placing them in  \nthe dishwasher and running it bef ore leaving."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "response": "The washing machine in the property is located in the basement bathroom. Guests are welcome to use both the washer and dryer for free. Additionally, the area is stocked with limited dryer sheets and laundry detergent pods for convenience.",
+            "sources": [
+                {
+                    "content": "The laundry facilities in the home include a separate washer and dryer located in the basement bathroom. Guests are welcome to use both for free, and the area is stocked with limited dryer sheets and laundry detergent pods.",
+                    "tool_name": "vector_tool",
+                    "raw_input": {
+                        "input": "laundry"
+                    },
+                    "raw_output": "The laundry facilities in the home include a separate washer and dryer located in the basement bathroom. Guests are welcome to use both for free, and the area is stocked with limited dryer sheets and laundry detergent pods.",
+                    "is_error": false,
+                    "source_nodes": [
+                        {
+                            "id": "8204d26b-8492-4a99-9da1-b924c04dc1f3",
+                            "text": "\ud83e\uddfa \u00a0 L a u n d r y\nThe home comes equipped with a sep arate washer & dr yer located in the  \nbasement b athroom. Both ar e free for guest s to use, and w e have stocked the \narea with limit ed dryer sheet s and laundr y detergent pods!"
+                        },
+                        {
+                            "id": "ee05ca57-d4b8-4aa2-a680-4f0ff9f56c57",
+                            "text": "C h e c k i n g  O u t\n\ud83d\udc4b \u00a0 C h e c k - o u t  P r o c e d u r e\nPlease place all used sheet s and towels in the washing machine and run it pr ior to \nyour departure. We ask that y ou do the same f or all of the dishes, placing them in  \nthe dishwasher and running it bef ore leaving."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
