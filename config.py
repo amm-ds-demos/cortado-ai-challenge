@@ -7,7 +7,7 @@ def get_config() -> dict:
     cfg = {}
 
     # Models
-    cfg["models"] = {"llm": "gpt-3.5-turbo", "embedding": "BAAI/bge-large-en-v1.5"}
+    cfg["models"] = {"llm": "gpt-4", "embedding": "BAAI/bge-large-en-v1.5"}
 
     cfg["llm_params"] = {"temperature": 0.3}
     cfg["embedding_params"] = {"trust_remote_code": False}
@@ -16,7 +16,7 @@ def get_config() -> dict:
     cfg["directories"] = {
         "pdf_dir": "data/pdf",
         "json_dir": "data/json",
-        "index_name": "collections/storage_gpt3.5_0.3_128_4_5_bge_run3",
+        "index_name": "collections/storage_gpt4_0.6_128_8_10_bge_run3",
     }
 
     # Prompts
@@ -223,8 +223,8 @@ def get_config() -> dict:
     # Add these parameters to the existing config dictionary
     cfg["evaluation"] = {
         "questions_file": "data/questions.json",
-        "evaluations_output_file": "evaluations/evaluation_gpt-3.5-0.3_128_4_5_bge_run3.json",
-        "processed_agent_responses_file": "processed_responses/processed_agent_responses_gpt-3.5-0.3_128_4_5_bge_run3.json",
+        "evaluations_output_file": "evaluations/evaluation_gpt-4-0.6_128_8_10_bge_run4.json",
+        "processed_agent_responses_file": "processed_responses/processed_agent_responses_gpt-4-0.6_128_8_10_bge_run4.json",
         "relevancy_threshold": 0,
         "correctness_threshold": 0,
         "evaluation_model": "gpt-3.5-turbo",

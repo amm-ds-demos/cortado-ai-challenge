@@ -1,0 +1,152 @@
+[
+    {
+        "question": "What is the property\u2019s address?",
+        "expected_answer": "The property\u2019s address is 402 4th St NE Washington, DC 20002.",
+        "response": "The address of the property is 402 4th St NE, Washington, DC 20002, USA.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5621185761825079,
+            "Truthfulness": 0.6480553981906669
+        }
+    },
+    {
+        "question": "Does this property accept pets?",
+        "expected_answer": "Yes, this property can accommodate a small dog or cat with an additional $50 pet fee.",
+        "response": "Yes, the property does accept pets. However, please note that there is a pet fee of $50.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.4108177977664811,
+            "Truthfulness": 0.5515710904278557
+        }
+    },
+    {
+        "question": "What is the cancellation policy?",
+        "expected_answer": "Full refund if cancelled at least 15 days ahead of time. Otherwise no refund is provided.",
+        "response": "The cancellation policy for the property is as follows: You will receive a full refund if you cancel your booking at least 15 days ahead of time. If you cancel within less than 15 days of your scheduled stay, no refund will be provided.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5558715324853203,
+            "Truthfulness": 0.6722795317399002
+        }
+    },
+    {
+        "question": "Can I vape at the property?",
+        "expected_answer": "We do not allow smoking of any kind (including vaping & e-cigarettes) in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property; breaking this rule is grounds for termination of your stay and will incur a $500 cleaning fee",
+        "response": "Smoking, including vaping and e-cigarettes, is not allowed in the property, on the property grounds, or within 50 feet of the property. Any violation of this rule is grounds for termination of your stay and will incur a $500 cleaning fee. Please respect this rule to ensure a comfortable and safe environment for all guests and neighbors.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.4748343246572387,
+            "Truthfulness": 0.6508724792967823
+        }
+    },
+    {
+        "question": "Do you need a key to access the property?",
+        "expected_answer": "No, you do not need a key. The home is equipped with an electronic smartlock, which can be accessed using the code 2048. Please note that the door automatically locks at 30 seconds.",
+        "response": "No, you do not need a physical key to access the property. The property is equipped with a smart lock, and the access code is '2048'. Please use this code to unlock the door during your stay.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.40859476622351415,
+            "Truthfulness": 0.5386764014783777
+        }
+    },
+    {
+        "question": "What is the total price for 1 guest staying two nights with a small pet?",
+        "expected_answer": "The total price for this reservation would be $650. The nightly price is $200, plus an additional $50 pet fee.",
+        "response": "The total price for 1 guest staying for two nights with a small pet would be calculated as follows:\n\n- The nightly price is $300. For two nights, this would be $600.\n- The pet fee is $50.\n\nSo, the total price would be $600 (for two nights) + $50 (pet fee) = $650. Please note that this does not include any potential taxes or additional fees.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.6423662863000665,
+            "Truthfulness": 0.5748981375235973
+        }
+    },
+    {
+        "question": "What time does the guest need to check out by?",
+        "expected_answer": "Check-out is any time before 11AM.",
+        "response": "The check-out time for the property is 11 AM. Please ensure to vacate the property by this time on your day of departure.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5138927149848752,
+            "Truthfulness": 0.3229550096100916
+        }
+    },
+    {
+        "question": "What is the name of the guest arriving on July 17?",
+        "expected_answer": "The name of the guest arriving on July 17 is Patrick Star.",
+        "response": "I'm sorry, but I couldn't find any information about a guest arriving on July 17. It's possible that there are no bookings for that date or the guest's details were not recorded in the prior conversations.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.20981722295783536,
+            "Truthfulness": 0.1695489851175748
+        }
+    },
+    {
+        "question": "Is there street parking at the property?",
+        "expected_answer": "There is limited street parking outside of the property. Guests should park in the green-signed zones to avoid tickets.",
+        "response": "Yes, there is street parking available in the area around the property. In Washington DC, there are designated areas for overnight parking and two-hour parking during the day. However, it's always recommended to bring all your valuables inside and not leave anything of value visible within your car for safety reasons.",
+        "metrics": {
+            "relevancy": 0.3333333333333333,
+            "Correctness": 0.19978259925941594,
+            "Truthfulness": 0.1987667961594703
+        }
+    },
+    {
+        "question": "What\u2019s the home\u2019s WiFi password and where is the router located?",
+        "expected_answer": "The WiFi password is Cortad0! and the router is located in the main dining room by the window",
+        "response": "The WiFi username for the property is 'Cortado_Stanton_Park' and the password is 'Cortad0!'. Unfortunately, the location of the router is not specified in the information I have. If you have trouble connecting, you might want to look in common areas like the living room or near the television, as that's where routers are often located.",
+        "metrics": {
+            "relevancy": 0.25,
+            "Correctness": 0.19622721422771017,
+            "Truthfulness": 0.2198822934597898
+        }
+    },
+    {
+        "question": "Is there a coffeemaker provided and what is the contact\u2019s email?",
+        "expected_answer": "The home is equipped with a Mr. Coffee drip coffee maker. The contact\u2019s email is bob@yahoo.mail.",
+        "response": "Yes, the property is equipped with a Mr. Coffee coffeemaker for drip coffee. \n\nFor further inquiries, you can contact Spongebob Squarepants via email at bob@yahoo.mail.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.49813088952895146,
+            "Truthfulness": 0.4894696787812295
+        }
+    },
+    {
+        "question": "Is there a pet fee and what is the name of the guest\u2019s snail?",
+        "expected_answer": "The pet fee is $50 and the snail\u2019s name is Gary.",
+        "response": "Yes, there is a pet fee of $50 at the property. As for the guest's snail, its name is Gary, as mentioned by Patrick Star in a previous conversation.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5415056287029894,
+            "Truthfulness": 0.5462694531471991
+        }
+    },
+    {
+        "question": "What is the best place to get a bowl of chili near the rental?",
+        "expected_answer": "The best place to get some chili is the famous Ben\u2019s Chili Bowl.",
+        "response": "For a great bowl of chili, you might want to visit Ben's Chili Bowl. It's a well-known establishment in DC, famous for its steaming bowls of chili. It's located on H Street, which is not far from the rental property. Another option is Cane, which offers Caribbean street food in a cozy setting and was once frequented by President Obama. However, they may not serve chili.",
+        "metrics": {
+            "relevancy": 0.8333333333333334,
+            "Correctness": 0.22164054388416118,
+            "Truthfulness": 0.2131192136376414
+        }
+    },
+    {
+        "question": "What should the guest do before they check-out?",
+        "expected_answer": "The guest should place all used sheets and towels in the washing machine and run it prior to their departure. They should do the same for all dirty dishes and cookware, placing them in the dishwasher and running it before leaving.",
+        "response": "Before checking out, guests are requested to adhere to the following procedures:\n\n1. Check-out time is no later than 11:00 AM on the day of your departure.\n2. Please place all used sheets and towels in the washing machine and start a wash cycle.\n3. All used dishes should be placed in the dishwasher and it should be run before you leave.\n\nThese steps help ensure a smooth transition for the next guests and assist our cleaning team. Thank you for your cooperation.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.3982653085871414,
+            "Truthfulness": 0.4156728075961668
+        }
+    },
+    {
+        "question": "Where is the home\u2019s washing machine?",
+        "expected_answer": "The home\u2019s washing machine is located in the basement bathroom and is free for guests to use during their stay.",
+        "response": "The washing machine is located in the basement bathroom of the home. It's available for guests to use free of charge, and the area is stocked with limited dryer sheets and laundry detergent pods. Remember to place all used sheets and towels in the washing machine and run it before your departure.",
+        "metrics": {
+            "relevancy": 0.25,
+            "Correctness": 0.2951054103202817,
+            "Truthfulness": 0.26442738022940326
+        }
+    }
+]
