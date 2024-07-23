@@ -46,18 +46,11 @@ class JSONalyzeTool:
             jsonalyze_prompt=prompt_template,
         )
         return QueryEngineTool(
-            query_engine=jsonalyze_engine, metadata=self._get_tool_metadata()
-        )
-
-    def _get_tool_metadata(self) -> ToolMetadata:
-        """
-        Get the metadata for the tool.
-        Returns:
-            ToolMetadata: The metadata for the tool.
-        """
-        return ToolMetadata(
-            name=self.config["prompts"][f"json_tool_{self.json_file}"]["name"],
-            description=self.config["prompts"][f"json_tool_{self.json_file}"][
-                "description"
-            ],
+            query_engine=jsonalyze_engine,
+            metadata=ToolMetadata(
+                name=self.config["prompts"][f"json_tool_{self.json_file}"]["name"],
+                description=self.config["prompts"][f"json_tool_{self.json_file}"][
+                    "description"
+                ],
+            ),
         )

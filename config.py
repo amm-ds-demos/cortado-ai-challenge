@@ -19,7 +19,6 @@ def get_config() -> dict:
         "index_name": "collections/storage",
     }
 
-
     # Prompts
     cfg["prompts"] = {}
     cfg["prompts"][
@@ -211,7 +210,7 @@ def get_config() -> dict:
         "summarizer_max_tokens": None,
         "token_limit": 256,
     }
-    
+
     # Agent settings
     cfg["agent"] = {
         "tool_choice": [
@@ -223,7 +222,7 @@ def get_config() -> dict:
         "verbose": True,
     }
 
-    # Add these parameters to the existing config dictionary
+    # Evaluation settings
     cfg["evaluation"] = {
         "questions_file": "data/questions.json",
         "evaluations_output_file": "evaluations/evaluation_file.json",

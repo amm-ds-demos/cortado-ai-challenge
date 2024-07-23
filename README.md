@@ -91,7 +91,6 @@ Handles JSONalyze tools which provide structured information about rental proper
 - **JSONalyzeTool**: Initializes the JSONalyze tool with configurations, LLM, and JSON file.
   - `__init__(config: Dict, llm: OpenAI, json_file: str)`: Initializes the JSONalyze tool.
   - `initialize_jsonalyze_tool() -> QueryEngineTool`: Initializes the JSONalyze tool with a query engine and metadata.
-  - `get_tool_metadata() -> ToolMetadata`: Gets the metadata for the tool.
 
 ### `config.py`
 
