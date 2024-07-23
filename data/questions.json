@@ -1,0 +1,36 @@
+{
+    "questions": [
+        "What is the property’s address?",
+        "Does this property accept pets?",
+        "What is the cancellation policy?",
+        "Can I vape at the property?",
+        "Do you need a key to access the property?",
+        "What is the total price for 1 guest staying two nights with a small pet?",
+        "What time does the guest need to check out by?",
+        "What is the name of the guest arriving on July 17?",
+        "Is there street parking at the property?",
+        "What’s the home’s WiFi password and where is the router located?",
+        "Is there a coffeemaker provided and what is the contact’s email?",
+        "Is there a pet fee and what is the name of the guest’s snail?",
+        "What is the best place to get a bowl of chili near the rental?",
+        "What should the guest do before they check-out?",
+        "Where is the home’s washing machine?"
+    ],
+    "expected_answers": [
+        "The property’s address is 402 4th St NE Washington, DC 20002.",
+        "Yes, this property can accommodate a small dog or cat with an additional $50 pet fee.",
+        "Full refund if cancelled at least 15 days ahead of time. Otherwise no refund is provided.",
+        "We do not allow smoking of any kind (including vaping & e-cigarettes) in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property; breaking this rule is grounds for termination of your stay and will incur a $500 cleaning fee",
+        "No, you do not need a key. The home is equipped with an electronic smartlock, which can be accessed using the code 2048. Please note that the door automatically locks at 30 seconds.",
+        "The total price for this reservation would be $650. The nightly price is $200, plus an additional $50 pet fee.",
+        "Check-out is any time before 11AM.",
+        "The name of the guest arriving on July 17 is Patrick Star.",
+        "There is limited street parking outside of the property. Guests should park in the green-signed zones to avoid tickets.",
+        "The WiFi password is Cortad0! and the router is located in the main dining room by the window",
+        "The home is equipped with a Mr. Coffee drip coffee maker. The contact’s email is bob@yahoo.mail.",
+        "The pet fee is $50 and the snail’s name is Gary.",
+        "The best place to get some chili is the famous Ben’s Chili Bowl.",
+        "The guest should place all used sheets and towels in the washing machine and run it prior to their departure. They should do the same for all dirty dishes and cookware, placing them in the dishwasher and running it before leaving.",
+        "The home’s washing machine is located in the basement bathroom and is free for guests to use during their stay."
+    ]
+}

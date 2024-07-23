@@ -25,7 +25,7 @@ The core of the Cortado AI Backend Agent is built upon the integration of LlamaI
 It is recommended to use a virtual environment to manage dependencies. To set up a virtual environment and install the required packages, run:
 
 ```bash
-python -m virtuanelv .venv
+python3 -m virtualenv .venv
 source .venv/bin/activate  
 pip install -r requirements.txt
 ```

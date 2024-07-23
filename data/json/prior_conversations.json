@@ -1,0 +1,58 @@
+{
+    "status": "success",
+    "result": [
+          {
+            "id": 160610672,
+            "listingMapId": 243759,
+            "reservationId": 30540343,
+            "conversationId": 20149952,
+            "body": "Any time!",
+            "imagesUrls": null,
+            "isIncoming": 0,
+            "listingTimeZoneName": "America/New_York",
+            "status": "sent",
+            "sentChannelDate": "2024-07-16 21:56:00",
+            "communicationType": "email"
+        },
+        {
+            "id": 160610669,
+            "listingMapId": 243759,
+            "reservationId": 30540343,
+            "conversationId": 20149952,
+            "body": "Sweet, thanks!",
+            "imagesUrls": null,
+            "isIncoming": 1,
+            "listingTimeZoneName": "America/New_York",
+            "status": "sent",
+            "sentChannelDate": "2024-07-16 21:54:31",
+            "communicationType": "email"
+        },
+        {
+            "id": 160610668,
+            "listingMapId": 243759,
+            "reservationId": 30540343,
+            "conversationId": 20149952,
+            "body": "Hey Patrick, I'm so excited to host you and Gary tomorrow! You are more than welcome to bring a pet, we just ask that you pay the additional $50 pet fee before arrival. I'll be sure the kitchen is stocked with plenty of krabby patties for your stay, as well.",
+            "imagesUrls": null,
+            "isIncoming": 0,
+            "listingTimeZoneName": "America/New_York",
+            "status": "sent",
+            "sentChannelDate": "2024-07-16 21:22:57",
+            "communicationType": "email"
+        },
+        {
+            "id": 160610667,
+            "listingMapId": 243759,
+            "reservationId": 30540343,
+            "conversationId": 20149952,
+            "body": "Hey there! This is Patrick Star, I'm really looking forward to my reservation tomorrow! Just checking, can I bring my pet snail, Gary? He's a total sweetheart, and doesn't shed at all!",
+            "imagesUrls": null,
+            "isIncoming": 1,
+            "listingTimeZoneName": "America/New_York",
+            "status": "sent",
+            "sentChannelDate": "2024-07-16 21:19:02",
+            "communicationType": "email"
+        }
+    ]
+
+}
