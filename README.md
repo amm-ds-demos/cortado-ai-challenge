@@ -1,6 +1,6 @@
 # Cortado AI Agent Test
 
-## Overview
+## Introduction
 
 The Cortado AI Agent is designed to assist customers in managing rentals and hospitality services efficiently. By leveraging advanced AI capabilities, the agent processes and responds to user queries, analyzes documents, and manages data. The integration of large language models (LLMs) and sophisticated data processing tools ensures high relevance and accuracy in responses, enhancing user experience and operational efficiency.
 
