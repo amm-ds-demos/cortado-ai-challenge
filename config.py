@@ -7,7 +7,7 @@ def get_config() -> dict:
     cfg = {}
 
     # Models
-    cfg["models"] = {"llm": "gpt-4", "embedding": "BAAI/bge-large-en-v1.5"}
+    cfg["models"] = {"llm": "gpt-3.5-turbo", "embedding": "BAAI/bge-large-en-v1.5"}
 
     cfg["llm_params"] = {"temperature": 0.3}
     cfg["embedding_params"] = {"trust_remote_code": False}
@@ -16,7 +16,7 @@ def get_config() -> dict:
     cfg["directories"] = {
         "pdf_dir": "data/pdf",
         "json_dir": "data/json",
-        "index_name": "collections/storage_gpt4_0.6_128_8_5_bge_run3",
+        "index_name": "collections/storage_gpt4_0.6_128_8_5_bge_run3-chat",
     }
 
 
@@ -202,13 +202,14 @@ def get_config() -> dict:
         "files": ["prior_conversations", "listing_object"],
     }
 
+    # Memory settings
     cfg["memory"] = {
-        "use_memory": False,
+        "use_memory": True,
         "tokenizer_llm": "gpt-3.5-turbo",
         "summarizer_llm": "gpt-3.5-turbo",
         "retriever_kwargs": {"similarity_top_k": 3},
-        "summarizer_max_tokens": 32,
-        "token_limit": 32,
+        "summarizer_max_tokens": None,
+        "token_limit": 256,
     }
     # Agent settings
     cfg["agent"] = {
