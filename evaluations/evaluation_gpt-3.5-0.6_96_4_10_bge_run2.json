@@ -1,0 +1,152 @@
+[
+    {
+        "question": "What is the property\u2019s address?",
+        "expected_answer": "The property\u2019s address is 402 4th St NE Washington, DC 20002.",
+        "response": "The property's address is 402 4th St NE, Washington, DC 20002, USA.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.7369078400914834,
+            "Truthfulness": 0.6924240337307822
+        }
+    },
+    {
+        "question": "Does this property accept pets?",
+        "expected_answer": "Yes, this property can accommodate a small dog or cat with an additional $50 pet fee.",
+        "response": "Yes, the property \"Cortado Stanton Park\" does accept pets, and there is a pet fee of $50.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5017902227168666,
+            "Truthfulness": 0.5284178595658673
+        }
+    },
+    {
+        "question": "What is the cancellation policy?",
+        "expected_answer": "Full refund if cancelled at least 15 days ahead of time. Otherwise no refund is provided.",
+        "response": "The cancellation policy for the property \"Cortado Stanton Park\" is a full refund if cancelled at least 15 days ahead of time. Otherwise, no refund will be provided.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.7336744575646967,
+            "Truthfulness": 0.774343492609943
+        }
+    },
+    {
+        "question": "Can I vape at the property?",
+        "expected_answer": "We do not allow smoking of any kind (including vaping & e-cigarettes) in the home, anywhere on the property (including on balconies), or anywhere within 50 feet of the property; breaking this rule is grounds for termination of your stay and will incur a $500 cleaning fee",
+        "response": "Vaping is not allowed at the property \"Cortado Stanton Park.\" The smoking policy strictly prohibits smoking of any kind, including vaping and e-cigarettes, both inside the home and within 50 feet of the property. Violating this rule may result in termination of your stay and a $500 cleaning fee.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.5195442697028813,
+            "Truthfulness": 0.4441858742903101
+        }
+    },
+    {
+        "question": "Do you need a key to access the property?",
+        "expected_answer": "No, you do not need a key. The home is equipped with an electronic smartlock, which can be accessed using the code 2048. Please note that the door automatically locks at 30 seconds.",
+        "response": "You do not need a physical key to access the property. The smart lock code for the listing is 2048.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.27398145741541213,
+            "Truthfulness": 0.3146950487756556
+        }
+    },
+    {
+        "question": "What is the total price for 1 guest staying two nights with a small pet?",
+        "expected_answer": "The total price for this reservation would be $650. The nightly price is $200, plus an additional $50 pet fee.",
+        "response": "For 1 guest staying two nights with a small pet at the property \"Cortado Stanton Park,\" the total price would be as follows:\n- Nightly Price: $300\n- Cleaning Fee: $150\n- Extra Person Fee: $60\n- Pet Fee: $50\n\nTotal Price for 2 nights with 1 guest and a small pet: $860.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.18759070028755606,
+            "Truthfulness": 0.2135931873195558
+        }
+    },
+    {
+        "question": "What time does the guest need to check out by?",
+        "expected_answer": "Check-out is any time before 11AM.",
+        "response": "The check-out time for the property \"Cortado Stanton Park\" is at 11:00 AM.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.6260497858457275,
+            "Truthfulness": 0.5553875498726849
+        }
+    },
+    {
+        "question": "What is the name of the guest arriving on July 17?",
+        "expected_answer": "The name of the guest arriving on July 17 is Patrick Star.",
+        "response": "There are no records of a guest arriving on July 17 in the prior conversations database. If you have a specific guest in mind, please provide their name for further assistance.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.14936836511616744,
+            "Truthfulness": 0.19243922948310577
+        }
+    },
+    {
+        "question": "Is there street parking at the property?",
+        "expected_answer": "There is limited street parking outside of the property. Guests should park in the green-signed zones to avoid tickets.",
+        "response": "There are designated overnight parking areas in green near the property. It is advised to bring all valuables inside and not leave any visible items in the car. Additionally, there are two-hour parking spots available during the day. If you prefer not to park on the street, the city has a comprehensive public transportation network for easy access to different areas.",
+        "metrics": {
+            "relevancy": 0.75,
+            "Correctness": 0.223279014186177,
+            "Truthfulness": 0.24006616391467706
+        }
+    },
+    {
+        "question": "What\u2019s the home\u2019s WiFi password and where is the router located?",
+        "expected_answer": "The WiFi password is Cortad0! and the router is located in the main dining room by the window",
+        "response": "The Wi-Fi network at the property is named Cortado_Stanton_Park. For the fastest speeds, it is recommended to connect to the 5G version of the network. Unfortunately, the specific WiFi password and router location details were not provided in the retrieved information.",
+        "metrics": {
+            "relevancy": 0.3333333333333333,
+            "Correctness": 0.20721150315046194,
+            "Truthfulness": 0.22361580152012545
+        }
+    },
+    {
+        "question": "Is there a coffeemaker provided and what is the contact\u2019s email?",
+        "expected_answer": "The home is equipped with a Mr. Coffee drip coffee maker. The contact\u2019s email is bob@yahoo.mail.",
+        "response": "The property's kitchen is fully equipped with stainless steel appliances, cookware, and dinnerware. As for the contact's email, it is bob@yahoo.mail.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.312590830594342,
+            "Truthfulness": 0.24402468555931542
+        }
+    },
+    {
+        "question": "Is there a pet fee and what is the name of the guest\u2019s snail?",
+        "expected_answer": "The pet fee is $50 and the snail\u2019s name is Gary.",
+        "response": "Yes, there is a pet fee of $50 for the property \"Cortado Stanton Park.\" Additionally, the guest's snail's name is Gary.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.7144388426591928,
+            "Truthfulness": 0.7447558002193221
+        }
+    },
+    {
+        "question": "What is the best place to get a bowl of chili near the rental?",
+        "expected_answer": "The best place to get some chili is the famous Ben\u2019s Chili Bowl.",
+        "response": "Two recommended restaurants near the rental property are Ben's Chili Bowl and Cane. Ben's Chili Bowl is known for its delicious bowls of chili, making it a great place to satisfy your chili cravings.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.2923114569176807,
+            "Truthfulness": 0.3058337313357055
+        }
+    },
+    {
+        "question": "What should the guest do before they check-out?",
+        "expected_answer": "The guest should place all used sheets and towels in the washing machine and run it prior to their departure. They should do the same for all dirty dishes and cookware, placing them in the dishwasher and running it before leaving.",
+        "response": "Before checking out, guests should follow these procedures:\n1. Place all used sheets and towels in the washing machine and run it before departure.\n2. Do the same for all dishes by placing them in the dishwasher and running it before leaving.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.6070926121917538,
+            "Truthfulness": 0.5252807942533673
+        }
+    },
+    {
+        "question": "Where is the home\u2019s washing machine?",
+        "expected_answer": "The home\u2019s washing machine is located in the basement bathroom and is free for guests to use during their stay.",
+        "response": "The washing machine in the property is located in the basement bathroom. Guests are welcome to use both the washer and dryer for free. Additionally, the area is stocked with limited dryer sheets and laundry detergent pods for convenience.",
+        "metrics": {
+            "relevancy": 1.0,
+            "Correctness": 0.2797524230102222,
+            "Truthfulness": 0.3870940437010714
+        }
+    }
+]
