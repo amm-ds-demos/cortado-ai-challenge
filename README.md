@@ -7,7 +7,9 @@ This repository is for a technical test for the Cortado AI ML/AI engineer positi
 
 The Cortado AI Agent is designed to assist customers in managing rentals and hospitality services efficiently by leveraging advanced AI capabilities. The agent processes and responds to user queries, analyzes documents, and manages data. The integration of large language models (LLMs) and sophisticated data processing tools achieve high relevance and accuracy in responses, enhancing user experience and operational efficiency.
 
-For a comprehensive understanding of the project, please refer to the following resources:
+For a comprehensive understanding of the project and the role, please refer to the following resources:
+- Cortado AI ML/AI Engineer Job Description: [link](https://cortado-ai.notion.site/Cortado-AI-ML-Engineer-971a3a3b3b154582bf7cdf1f091788ab)
+- Cortado AI Hiring Challenge Documentation: [link](https://cortado-ai.notion.site/Cortado-Hiring-Challenge-Lead-AI-ML-8a0646cb2b3e48508fc7f2ac85afc2b1?pvs=4)
 - Two demonstration videos:
   - One resolving the proposed questions from Cortado using GPT-4 in the following [link](https://drive.google.com/file/d/1PHgz0zGtGlsvKsYbfztbhWvXRprofdMk/view?usp=sharing)
   - Another showcasing the agent's memory capabilities and handling a two-step question for a challenging edge case, with GPT-3.5-turbo, in this [link](https://drive.google.com/file/d/19W4nm_B7rlVnNkKC4pBFYTl53EGXWUMo/view?usp=sharing)
