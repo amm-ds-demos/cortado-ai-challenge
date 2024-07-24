@@ -145,7 +145,7 @@ class AgentEvaluator:
         return {
             "response": response.response,
             "sources": [
-                self.serialize_tool_output(source) for source in response.sources
+                self._serialize_tool_output(source) for source in response.sources
             ],
         }
 
