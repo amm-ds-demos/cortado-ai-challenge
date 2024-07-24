@@ -1,8 +1,28 @@
 def get_config() -> dict:
     """
-    Get the configuration dictionary.
+    Get the configuration dictionary for the Cortado AI Agent.
+
+    This function initializes and returns a comprehensive configuration dictionary that is essential for the
+    operation of the Cortado AI Agent. The configuration includes settings for models, directories, prompts,
+    chunking, tools, memory, agent behavior, and evaluation parameters. Each section of the configuration is
+    meticulously defined to ensure seamless integration and functionality of various components within the agent.
+
+    The configuration dictionary contains the following sections:
+
+    - Models: Specifies the language model (LLM) and embedding model to be used, along with their parameters.
+    - Directories: Defines the paths for directories where PDF and JSON files are stored, and the index name for
+      vector storage.
+    - Prompts: Contains the system prompt and tool-specific prompts that guide the agent's responses and actions.
+    - Chunking: Settings for chunk size and overlap, which are crucial for processing large documents efficiently.
+    - Vector Tool: Configuration for the vector tool, including rerank settings and metadata information.
+    - JSON Tool: Settings for the JSON analysis tool, including verbosity and the list of JSON files to be processed.
+    - Memory: Parameters for memory usage, including tokenizer and summarizer settings, retriever options, and token limits.
+    - Agent: Defines the agent's tool choices, maximum function calls, and verbosity settings.
+    - Evaluation: Parameters for evaluating the agent's performance, including file paths for questions and outputs,
+      relevancy and correctness thresholds, evaluation model, and metrics for assessment.
+
     Returns:
-        dict: The configuration dictionary.
+        dict: The comprehensive configuration dictionary.
     """
     cfg = {}
 
@@ -202,8 +222,11 @@ def get_config() -> dict:
     }
 
     # Memory settings
+    # NOTE: Set to False if evaluating task-related questions for better results 
+    #       and less conversation buffer. If want to chat with the agent through CLI
+    #       set it to True and adjust parameters 
     cfg["memory"] = {
-        "use_memory": True,
+        "use_memory": False,
         "tokenizer_llm": "gpt-3.5-turbo",
         "summarizer_llm": "gpt-3.5-turbo",
         "retriever_kwargs": {"similarity_top_k": 3},
@@ -212,6 +235,7 @@ def get_config() -> dict:
     }
 
     # Agent settings
+    # Memory settings
     cfg["agent"] = {
         "tool_choice": [
             "vector_tool",
@@ -223,6 +247,8 @@ def get_config() -> dict:
     }
 
     # Evaluation settings
+    # Memory settings
+    # NOTE: Arbitrary number of GEVal metrics can be defined in the geval_metrics list 
     cfg["evaluation"] = {
         "questions_file": "data/questions.json",
         "evaluations_output_file": "evaluations/evaluation_file.json",

@@ -13,11 +13,19 @@ from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import tiktoken
 
-
 class CortadoAgent:
     def __init__(self):
         """
-        Initializes the AgentBackend with configurations, components, tools, memory, and the agent runner.
+        Initializes the CortadoAgent with configurations, components,
+        tools, memory, and the agent runner.
+
+        This class is responsible for setting up the entire backend system
+        for the Cortado AI Agent. It loads configurations, initializes the
+        necessary components such as the LLM and embedding model,
+        sets up global settings, and prepares initializes tools and memory modules
+        required for the agent's operation.
+
+        The agent runner is also created to handle the processing of user queries.
         """
         self.config = get_config()
         self.llm, self.embed_model = self._initialize_components()
@@ -31,19 +39,21 @@ class CortadoAgent:
 
     def _setup_settings(self):
         """
-        Set up global settings for the LLM, embedding model, tokenizer, and other components.
+        Set up global settings for the LLM, embedding model, tokenizer, and other components
+        in the Settings class from llama_index.
         """
         Settings.llm = self.llm
         Settings.embed_model = self.embed_model
-        Settings.tokenizer = tiktoken.encoding_for_model(
-            self.config["memory"]["tokenizer_llm"]
-        ).encode
         Settings.chunk_size = self.config["chunking"]["chunk_size"]
         Settings.chunk_overlap = self.config["chunking"]["chunk_overlap"]
 
     def _initialize_components(self) -> Tuple[OpenAI, HuggingFaceEmbedding]:
         """
         Initialize the components including the LLM and embedding model.
+
+        This method creates instances of the OpenAI language model and the HuggingFace
+        embedding model based on the configuration settings.
+
         Returns:
             Tuple[OpenAI, HuggingFaceEmbedding]: The initialized LLM and embedding model.
         """
@@ -60,6 +70,11 @@ class CortadoAgent:
     def _initialize_vector_tool(self) -> VectorTool:
         """
         Initialize the vector tool with a retriever query engine and metadata.
+
+        This method sets up the VectorTool, which is responsible for handling vectorized
+        data sources. It leverages the language model and embedding model to enhance the
+        accuracy and relevance of responses generated from the underlying data.
+
         Returns:
             VectorTool: The initialized vector tool.
         """
@@ -71,6 +86,10 @@ class CortadoAgent:
     def _initialize_jsonalyze_tools(self) -> List[JSONalyzeTool]:
         """
         Initialize the JSONalyze tools based on the configuration.
+
+        This method creates instances of the JSONalyzeTool for each JSON file
+        specified in the configuration.
+
         Returns:
             List[JSONalyzeTool]: The list of initialized JSONalyze tools.
         """
@@ -82,6 +101,11 @@ class CortadoAgent:
     def _initialize_memory(self) -> SimpleComposableMemory:
         """
         Initialize the composable memory with a chat summary memory buffer.
+
+        This method sets up the memory components required for the agent's operation.
+        It initializes a chat summary memory buffer to store and summarize chat history,
+        and a vector memory to handle vectorized data.
+
         Returns:
             SimpleComposableMemory: The initialized composable memory.
         """
@@ -114,10 +138,16 @@ class CortadoAgent:
     def _create_agent_runner(self) -> AgentRunner:
         """
         Create the agent runner with the LLM, tools, system prompt and composable memory.
+
+        This method sets up the agent runner, which is responsible for handling user queries
+        and generating responses.
+
+        It configures the FunctionCallingAgentWorker with the LLM model, tools,
+        system prompt, and memory components.
+
         Returns:
             FunctionCallingAgentWorker: The created agent runner.
         """
-
         agent_worker = FunctionCallingAgentWorker.from_tools(
             llm=self.llm,
             tools=[tool.tool for tool in self.tools],
@@ -137,8 +167,15 @@ class CortadoAgent:
     def process_question(self, question: str) -> str:
         """
         Process a question by passing it to the agent runner and returning the response.
+
+        This method takes a user question as input, processes it using the agent runner,
+        and returns the generated response.
+
+        It also updates the memory components if memory usage is enabled in the configuration.
+
         Args:
             question (str): The question to process.
+
         Returns:
             str: The response from the agent runner.
         """

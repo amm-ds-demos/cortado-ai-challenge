@@ -13,17 +13,29 @@ from llama_index.core.postprocessor import SentenceTransformerRerank
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.vector_stores import MetadataInfo, VectorStoreInfo
+from llama_index.core.node_parser import SentenceSplitter
+
 from typing import Dict
 
 
 class VectorTool:
     def __init__(self, config: Dict, llm: OpenAI, embed_model: HuggingFaceEmbedding):
         """
-        Initializes the VectorTool with configurations, LLM, and embedding model.
+        Initializes the VectorTool, a component designed to facilitate the retrieval and processing of
+        information from vectorized data sources.
+
         Args:
-            config (Dict): The configuration dictionary.
-            llm (OpenAI): The LLM instance.
-            embed_model (HuggingFaceEmbedding): The embedding model instance.
+            config (Dict): A comprehensive configuration dictionary that contains settings for
+                           directories, model parameters, and tool-specific options.
+            llm (OpenAI): An instance of the OpenAI language model, which is utilized for generating
+                          natural language responses based on the retrieved data.
+            embed_model (HuggingFaceEmbedding): An instance of the HuggingFace embedding model,
+                                                 responsible for transforming textual data into
+                                                 vector representations for efficient similarity
+                                                 searches.
+
+        The VectorTool is responsible for ensuring that the vector index is constructed and
+        maintained, allowing for efficient querying of data.
         """
         self.config = config
         self.llm = llm
@@ -33,11 +45,24 @@ class VectorTool:
 
     def _ensure_index_construction(self):
         """
-        Ensure the vector index is constructed and stored.
+        Ensures that the vector index is constructed and stored in the specified directory. If the
+        index does not exist, it creates the necessary directory structure and loads documents from
+        the specified PDF directory. The documents are then processed and stored in a vector index
+        for future retrieval.
+
+        This method utilizes the SimpleDirectoryReader to load data from PDF files and the
+        VectorStoreIndex to create a persistent storage context for the vectorized documents.
         """
         if not os.path.exists(self.config["directories"]["index_name"]):
             os.makedirs(self.config["directories"]["index_name"])
-            transformations = Settings.transformations
+            # Pipeline of different transformations can be added here
+            transformations = [
+                SentenceSplitter(
+                    chunk_size=self.config["chunking"]["chunk_size"],
+                    chunk_overlap=self.config["chunking"]["chunk_overlap"],
+                ),
+                self.embed_model,
+            ]
 
             documents = SimpleDirectoryReader(
                 self.config["directories"]["pdf_dir"]
@@ -48,9 +73,13 @@ class VectorTool:
 
     def _load_memory_index(self) -> VectorStoreIndex:
         """
-        Load the memory index from storage.
+        Loads the memory index from the specified storage directory. This index contains the
+        vectorized representations of documents that have been previously stored, allowing for
+        efficient retrieval during query processing.
+
         Returns:
-            VectorStoreIndex: The loaded memory index.
+            VectorStoreIndex: The loaded memory index, which can be used for querying and
+                              retrieving relevant information based on user input.
         """
         storage_context = StorageContext.from_defaults(
             persist_dir=self.config["directories"]["index_name"]
@@ -59,9 +88,16 @@ class VectorTool:
 
     def _initialize_vector_tool(self) -> QueryEngineTool:
         """
-        Initialize the vector tool with a retriever query engine and metadata.
+        Initializes the vector tool by setting up a retriever query engine and associated metadata.
+        This process involves creating a VectorStoreInfo object that encapsulates information about
+        the content and metadata of the vectorized documents. It also configures a retriever query
+        engine that utilizes the vector index and applies a reranking model to enhance the quality
+        of the retrieved results.
+
         Returns:
-            QueryEngineTool: The initialized vector tool.
+            QueryEngineTool: The initialized vector tool, which includes the query engine and
+                             metadata necessary for processing user queries and generating
+                             responses.
         """
         vector_store_info = VectorStoreInfo(
             content_info=self.config["vector_tool"]["content_info"],

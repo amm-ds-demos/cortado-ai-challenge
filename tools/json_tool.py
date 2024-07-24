@@ -10,11 +10,17 @@ from typing import Dict
 class JSONalyzeTool:
     def __init__(self, config: Dict, llm: OpenAI, json_file: str):
         """
-        Initializes the JSONalyzeTool with configurations, LLM, and JSON file.
+        Initializes the JSONalyzeTool, which is responsible for processing and analyzing JSON data
+        using a specified language model (LLM). This tool leverages the configuration settings to
+        set up the environment and prepare the necessary components for querying JSON data.
+
         Args:
-            config (Dict): The configuration dictionary.
-            llm (OpenAI): The LLM instance.
-            json_file (str): The JSON file name.
+            config (Dict): A dictionary containing configuration settings, including prompts and
+                           directory paths for JSON files.
+            llm (OpenAI): An instance of the OpenAI language model used for generating responses
+                          based on the JSON data.
+            json_file (str): The name of the JSON file to be analyzed, which contains structured
+                             data relevant to rental properties or prior conversations.
         """
         self.config = config
         self.llm = llm
@@ -23,9 +29,14 @@ class JSONalyzeTool:
 
     def _initialize_jsonalyze_tool(self) -> QueryEngineTool:
         """
-        Initialize the JSONalyze tool with a query engine and metadata.
+        Initializes the JSONalyze tool by creating a query engine that can process the specified
+        JSON data. This method retrieves the appropriate prompt template, loads the JSON data from
+        a pickle file with a list of dicts, and sets up the query engine with the necessary parameters.
+
         Returns:
-            QueryEngineTool: The initialized JSONalyze tool.
+            QueryEngineTool: An instance of QueryEngineTool that encapsulates the JSON query engine
+                             and its associated metadata, enabling structured queries against the
+                             loaded JSON data.
         """
         prompt_template_str = self.config["prompts"][f"json_tool_{self.json_file}"][
             "prompt"

@@ -1,12 +1,13 @@
-# Cortado AI Agent Test
+# Cortado AI Agent Challenge
 
 ## Introduction
+This repository is for a technical test for the Cortado AI ML/AI engineer position, focusing on developing an agent capable of accessing PDF and JSON documents to respond to evaluation questions. The project implements Retrieval-Augmented Generation (RAG) and utilizes various agent tools to enhance data processing and response accuracy.
 
-The Cortado AI Agent is designed to assist customers in managing rentals and hospitality services efficiently. By leveraging advanced AI capabilities, the agent processes and responds to user queries, analyzes documents, and manages data. The integration of large language models (LLMs) and sophisticated data processing tools ensures high relevance and accuracy in responses, enhancing user experience and operational efficiency.
+The Cortado AI Agent is designed to assist customers in managing rentals and hospitality services efficiently by leveraging advanced AI capabilities. The agent processes and responds to user queries, analyzes documents, and manages data. The integration of large language models (LLMs) and sophisticated data processing tools achieve high relevance and accuracy in responses, enhancing user experience and operational efficiency.
 
 ### Technical Background
 
-The core of the Cortado AI Backend Agent is built upon the integration of LlamaIndex, a versatile framework designed to augment LLMs with custom data sources, agents and tools. This enables the system to ingest, structure, and access domain-specific data efficiently. The system uses OpenAI's LLMs for natural language understanding and HuggingFace embeddings for semantic search and retrieval.
+The core of the Cortado AI Agent is built upon the integration of LlamaIndex, a versatile framework designed to augment LLMs with custom data sources, agents and tools. This enables the system to ingest, structure, and access domain-specific data efficiently. The system uses OpenAI's LLMs for natural language understanding and HuggingFace embeddings for semantic search and retrieval.
 
 ### Implementation Goals
 
