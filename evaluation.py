@@ -76,7 +76,7 @@ class AgentEvaluator:
                 model=self.config["evaluation"]["evaluation_model"],
             )
             custom_metrics = [
-                self.create_geval_metric(metric)
+                self._create_geval_metric(metric)
                 for metric in self.config["evaluation"]["geval_metrics"]
             ]
 
@@ -199,13 +199,13 @@ class AgentEvaluator:
             except Exception as e:
                 responses.append(f"Error processing question '{q}': {str(e)}")
 
-        evaluations = self.evaluate_answers(
+        evaluations = self._evaluate_answers(
             questions,
             expected_answers,
             [i.response for i in responses if hasattr(i, "response")],
         )
-        processed_responses = self.process_agent_responses(responses)
-        self.save_to_json(
+        processed_responses = self._process_agent_responses(responses)
+        self._save_to_json(
             processed_responses,
             self.config["evaluation"]["processed_agent_responses_file"],
         )
