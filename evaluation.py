@@ -3,26 +3,30 @@ from typing import Dict, Any, List
 from deepeval import assert_test
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from deepeval.metrics import AnswerRelevancyMetric, GEval
+
 from agent_backend import CortadoAgent
 from config import get_config
 
 
 class AgentEvaluator:
-    def __init__(self, config: Dict[str, Any]):
+    def __init__(
+        self,
+    ):
         """
         Initialize the AgentEvaluator with the provided configuration and agent backend.
 
-        Args:
-            config (Dict[str, Any]): The configuration dictionary containing settings for evaluation,
-                                     including file paths, thresholds, and model parameters.
+        This method sets up the evaluator by loading the configuration settings from the config module
+        and initializing the agent backend using the CortadoAgent class. The configuration includes
+        various settings for chunking, vector tools, JSON tools, memory, agent behavior, and evaluation
+        metrics.
         """
-        self.config = config
+        self.config = get_config()
         self.agent_backend = CortadoAgent()
 
     def _create_geval_metric(self, metric_info: Dict[str, Any]) -> GEval:
         """
-        Create a GEval metric based on the provided metric information. 
-        
+        Create a GEval metric based on the provided metric information.
+
         An arbitrary number of GEval metrics can be defined through the configuration files,
         along its name and criteria.
 
@@ -211,6 +215,5 @@ class AgentEvaluator:
 
 
 if __name__ == "__main__":
-    config = get_config()
-    evaluator = AgentEvaluator(config)
+    evaluator = AgentEvaluator()
     evaluator.run_evaluation()

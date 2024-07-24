@@ -222,9 +222,9 @@ def get_config() -> dict:
     }
 
     # Memory settings
-    # NOTE: Set to False if evaluating task-related questions for better results 
+    # NOTE: Set to False if evaluating task-related questions for better results
     #       and less conversation buffer. If want to chat with the agent through CLI
-    #       set it to True and adjust parameters 
+    #       set it to True and adjust parameters
     cfg["memory"] = {
         "use_memory": False,
         "tokenizer_llm": "gpt-3.5-turbo",
@@ -246,7 +246,7 @@ def get_config() -> dict:
     }
 
     # Evaluation settings
-    # NOTE: Arbitrary number of GEVal metrics can be defined in the geval_metrics list 
+    # NOTE: Arbitrary number of GEVal metrics can be defined in the geval_metrics list
     cfg["evaluation"] = {
         "questions_file": "data/questions.json",
         "evaluations_output_file": "evaluations/evaluation_file.json",

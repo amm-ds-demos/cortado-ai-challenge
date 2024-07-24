@@ -1,7 +1,4 @@
 from typing import Tuple, List
-from config import get_config
-from tools.vector_tool import VectorTool
-from tools.json_tool import JSONalyzeTool
 from llama_index.core import Settings
 from llama_index.core.memory import (
     SimpleComposableMemory,
@@ -12,6 +9,11 @@ from llama_index.core.agent import FunctionCallingAgentWorker, AgentRunner
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import tiktoken
+
+from config import get_config
+from tools.vector_tool import VectorTool
+from tools.json_tool import JSONalyzeTool
+
 
 class CortadoAgent:
     def __init__(self):
