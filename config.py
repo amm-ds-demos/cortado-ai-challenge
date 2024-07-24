@@ -235,7 +235,6 @@ def get_config() -> dict:
     }
 
     # Agent settings
-    # Memory settings
     cfg["agent"] = {
         "tool_choice": [
             "vector_tool",
@@ -247,7 +246,6 @@ def get_config() -> dict:
     }
 
     # Evaluation settings
-    # Memory settings
     # NOTE: Arbitrary number of GEVal metrics can be defined in the geval_metrics list 
     cfg["evaluation"] = {
         "questions_file": "data/questions.json",
