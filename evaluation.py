@@ -195,7 +195,6 @@ class AgentEvaluator:
             except Exception as e:
                 responses.append(f"Error processing question '{q}': {str(e)}")
 
-        print(responses)
         evaluations = self.evaluate_answers(
             questions,
             expected_answers,
