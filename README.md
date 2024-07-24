@@ -217,7 +217,7 @@ does not require a memory buffer.
 
 The Cortado AI  Agent is a sophisticated function-calling agent that intelligently queries and routes requests to various tools, functioning as dynamic query engines. This architecture not only supports modular integration of diverse data sources but also enhances the agent's capabilities to perform automated search and retrieval over unstructured, semi-structured, and structured data. 
 
-By leveraging a reasoning loop, the agent can determine which tools to utilize based on the input task, the sequence of tool calls, and the parameters required for each tool. The Cortado AI Agent is designed to extend its functionality with an ad hoc toolset, allowing for specific developments tailored to user needs. It can process responses from various APIs and store relevant information for future use, making it a powerful knowledge worker within the LlamaIndex framework.
+By leveraging a reasoning loop, the agent can determine which tools to utilize based on the input task, the sequence of tool calls, and the parameters required for each tool. The Cortado AI Agent is designed to extend its functionality with an ad hoc toolset, allowing for specific developments tailored to user needs. It can process responses from various tools, query engines and APIs and store relevant information for future use, making it a powerful knowledge worker within the LlamaIndex framework.
 
 Incorporating conversational memory, the agent retains chat history and context, which enhances its ability to provide personalized and contextually relevant responses. This memory buffer can be configured to be optional, allowing for a more conversational experience when required.
 
