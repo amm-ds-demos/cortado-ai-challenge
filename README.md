@@ -183,8 +183,7 @@ does not require a memory buffer.
 
 ## Implementation
 
-- **OpenAI LLMs**: The core of the agent's functionality is powered by OpenAI's advanced language models which enables it to understand and generate human-like text. The models can interact with
-different RAG tools for agentic capabilities in conversational tasks, making it adept at handling a wide range of inquiries and retrieve the correct documentation.
+- **OpenAI LLMs**: The core of the agent's functionality is powered by OpenAI's advanced language models which enables it to understand and generate human-like text. The models can interact with different RAG tools for agentic capabilities in conversational tasks, making it adept at handling a wide range of inquiries and retrieve the correct documentation.
 
 - **Employs HuggingFace Embeddings for Semantic Search and Retrieval**: The system incorporates HuggingFace's embedding models to facilitate semantic search capabilities, with the ability of implementing different embedding models. This allows the agent to retrieve relevant information based on the meaning of the queries rather than just keyword matching, improving the accuracy of responses.
 
@@ -214,7 +213,7 @@ The Cortado AI Agent is designed to extend its functionality with an ad hoc tool
 
 Incorporating conversational memory, the agent retains chat history and context, which enhances its ability to provide personalized and contextually relevant responses. This memory buffer can be configured to be optional, allowing for a more conversational experience when required.
 
-The agent's architecture supports various types of agents, including Function Calling Agents, ReAct agents, and Advanced Agents, each designed to optimize the interaction with tools and data sources. With proper tool abstractions, users can define a set of tools that serve as APIs for the agent, facilitating seamless integration and interaction with external services.
+The agent's architecture supports various types of agents, including Function Calling Agents, ReAct agents and Custom Agent developmenets, each designed to optimize the interaction with tools and data sources for RAG applications. With proper tool abstractions, users can define a set of tools that serve as APIs for the agent, facilitating seamless integration and interaction with external services (like Airbnb or other rental platforms).
 
 The Cortado AI Agent exemplifies the capabilities of LLM-powered data agents, enabling efficient management of rental properties and hospitality services through intelligent data handling and response generation.
 

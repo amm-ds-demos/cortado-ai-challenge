@@ -39,7 +39,7 @@ class CortadoAgent:
 
     def _setup_settings(self):
         """
-        Set up global settings for the LLM, embedding model, tokenizer, and other components
+        Set up global settings for the LLM, embedding model, and other components
         in the Settings class from llama_index.
         """
         Settings.llm = self.llm
